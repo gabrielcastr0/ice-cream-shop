@@ -19,5 +19,5 @@ yarn
 E por fim, execute o seguinte comando para rodar a aplicação: <br>
 
 ```
-yarn start
+yarn dev
 ```
