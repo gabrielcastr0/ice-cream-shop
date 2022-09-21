@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Section from "../../components/Section";
 import * as Styled from './styled';
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <main>
       <Header />
+
       <Styled.ArtisanalIceCream>  
         <Styled.Text>Sorvete Artesanal</Styled.Text>
         <Styled.Image src={BannerHome} alt="Imagem de um sorvete"/>
@@ -20,6 +22,8 @@ export default function Home() {
       <Section title="Nossos eventos" span="Delicias com sorvete!" paragraphy="Mais do que uma sorveteria, uma extensão da sua casa! Estamos aqui prontinhos para te atender e oferecer os melhores eventos com os melhores sorvetes da sua vida! Venha nos conhecer e passar um tempo aqui com a gente." backgroundUrl={BannerEventos} isReverse={true}/>
 
       <Section title="Sobre nós" span="Alegria em cada casquinha!" paragraphy="Venha tomar o melhor sorvete da região aqui com a gente! Nós estamos há anos no mercado produzindo o que tem de melhor para o nosso cliente e você não pode ficar fora dessa. Venha nos fazer uma visitra e aproveite o melhor atendimento e o melhor sorvete da cidade." backgroundUrl={BannerSobre} isReverse={false}/>
+
+      <Footer />
     </main>
   )
 }

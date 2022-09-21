@@ -5,6 +5,10 @@ export const Section = styled.section<{isReverse: boolean}>`
   flex-direction: ${(props => props.isReverse ? 'row-reverse' : 'row')};
   height: 605px;
   width: 100%;
+
+  @media (max-width: 425px){
+    flex-direction: column;
+  }
 `;
 
 export const FirstColumn = styled.div<{backgroundUrl: string}>`
@@ -20,6 +24,10 @@ export const SecondColumn = styled.div`
   display: flex;
   flex: 1;
   justify-content: center;
+
+  @media (max-width: 425px){
+    padding: 20px;
+  }
 `;
 
 export const BoxTexts = styled.div`

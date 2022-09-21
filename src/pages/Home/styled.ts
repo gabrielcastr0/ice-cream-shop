@@ -12,6 +12,7 @@ export const ArtisanalIceCream = styled.section`
 export const Text = styled.h1`
   text-transform: uppercase;
   color: #fff;
+  text-align: center;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
   font-size: 60px;
   z-index: 1;
@@ -19,6 +20,10 @@ export const Text = styled.h1`
 
 export const Image = styled.img`
   position: absolute;
+
+  @media (max-width: 425px){
+    width: 100%;
+  }
 `;
 
 export const OurFlavors = styled.section`
