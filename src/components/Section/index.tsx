@@ -3,12 +3,12 @@ import * as Styled from './styled';
 type Props = {
   title: string;
   span: string;
-  paragraphy: string;
+  paragraph: string;
   backgroundUrl: string;
   isReverse: boolean;
 }
 
-export default function Section({title, span, paragraphy, backgroundUrl, isReverse}: Props) {
+export default function Section({title, span, paragraph, backgroundUrl, isReverse}: Props) {
   return (
     <Styled.Section isReverse={isReverse}>
       <Styled.FirstColumn backgroundUrl={backgroundUrl}/>
@@ -19,7 +19,7 @@ export default function Section({title, span, paragraphy, backgroundUrl, isRever
             <Styled.Title>{title}</Styled.Title>
             <Styled.Span>{span}</Styled.Span>
           </Styled.WrapperText>
-          <Styled.Paragraphy>{paragraphy}</Styled.Paragraphy>
+          <Styled.Paragraph>{paragraph}</Styled.Paragraph>
         </Styled.BoxTexts>
       </Styled.SecondColumn>
     </Styled.Section>

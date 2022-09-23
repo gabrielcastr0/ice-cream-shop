@@ -5,7 +5,6 @@ export const Container = styled.footer`
   background: #000;
   left: 0;
   bottom: 0;
-  position: relative;
 `;
 
 export const GroupItems = styled.div`
@@ -23,6 +22,11 @@ export const Wrapper = styled.div`
   gap: 80px;
   width: 100%;
   max-width: 1200px;
+
+  @media (max-width: 425px){
+    flex-direction: column;
+    gap: 30px;
+  }
 `;
 
 export const Logo = styled.img`
@@ -34,6 +38,10 @@ export const Info = styled.div`
   flex-direction: column;
   flex: 1;
   gap: 10px;
+
+  @media (max-width: 425px){
+    align-items: center;
+  }
 `;
 
 export const Title = styled.h1`
@@ -45,6 +53,10 @@ export const Title = styled.h1`
 export const WrapperTexts = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 425px){
+    align-items: center;
+  }
 `;
 
 export const Text = styled.span`

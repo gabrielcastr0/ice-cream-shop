@@ -56,4 +56,4 @@ export const Span = styled.span`
   font-style: italic;
 `;
 
-export const Paragraphy = styled.p``;
+export const Paragraph = styled.p``;
