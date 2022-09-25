@@ -6,7 +6,7 @@ export const ArtisanalIceCream = styled.section`
   align-items: center;
   height: 665px;
   width: 100%;
-  background-image: url(/assets/images/banner-sabores.jpg);
+  background-image: url(/assets/images/banner-sobre.png);
   background-size: cover;
   background-repeat: no-repeat;
 `;
@@ -20,33 +20,68 @@ export const Text = styled.h1`
   z-index: 1;
 `;
 
-export const SecondSection = styled.section`
-  height: auto;
-  width: 100%;
-`;
-
-export const TitleArea = styled.div`
-  padding-top: 105px;
+export const DescriptionArea = styled.section`
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 520px;
+  width: 100%;
+
+  @media (max-width: 425px){
+    padding: 20px;
+  }
 `;
 
-export const TitleText = styled.span`
-  text-transform: uppercase;
-  font-size: 25px;
+export const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+`;
+
+export const TextArea = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 1000px;
+`;
+
+export const Title = styled.h2`
+
+`;
+
+export const Span = styled.span`
+  font-style: italic;
   font-weight: 600;
 `;
 
-export const CardArea = styled.div`
+export const ParagraphWrapper = styled.div`
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 45px;
-  padding: 30px 0 145px 0;
-  width: 100%;
+  flex-direction: column;
+  gap: 25px;
 `;
 
-export const CardWrapper = styled.div`
-  width: 100%;
-  max-width: 1020px;
+export const Paragraph = styled.p`
+  text-align: center;
+`;
+
+export const ImageSection = styled.section``;
+
+export const ImageWrapper = styled.div`
+  display: flex;
+
+  @media (max-width: 425px){
+    flex-direction: column;
+  }
+`;
+
+export const Image = styled.img`
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+
+  @media (max-width: 425px){
+    width: 100%;
+  }
 `;

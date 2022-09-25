@@ -11,7 +11,7 @@ type Props = {
 export default function Section({title, span, paragraph, backgroundUrl, isReverse}: Props) {
   return (
     <Styled.Section isReverse={isReverse}>
-      <Styled.FirstColumn backgroundUrl={backgroundUrl}/>
+      <Styled.FirstColumn backgroundUrl={backgroundUrl} />
 
       <Styled.SecondColumn>
         <Styled.BoxTexts>

@@ -11,11 +11,11 @@ export default function Header() {
           <Link to="/">
             <Styled.Items>Home</Styled.Items>
           </Link>
-          <Link to="/about">
-            <Styled.Items>Sobre</Styled.Items>
-          </Link>
           <Link to="/flavors">
             <Styled.Items>Sabores</Styled.Items>
+          </Link>
+          <Link to="/about">
+            <Styled.Items>Sobre</Styled.Items>
           </Link>
         </Styled.MenuItems>
       </Styled.Wrapper>

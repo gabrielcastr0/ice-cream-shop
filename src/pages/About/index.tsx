@@ -1,13 +1,9 @@
-import Card from "../../components/Card";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
 import * as Styled from './styled';
-import Oreo from '/assets/images/sabor-oreo.png';
-import Pistache from '/assets/images/sabor-pistache.png';
-import CookieAndAvela from '/assets/images/sabor-cookies-avela.png';
-import Kiwi from '/assets/images/sorbet-kiwi.png';
-import Morango from '/assets/images/sorbet-morango.png';
-import Lemon from '/assets/images/sorbet-limao.png';
+
+import FirstImage from '/assets/images/sobre-image.jpg';
+import SecondImage from '/assets/images/sorveteria.jpg';
 
 export default function About() {
   return (
@@ -15,28 +11,45 @@ export default function About() {
       <Header />
 
       <Styled.ArtisanalIceCream>  
-        <Styled.Text>Nossos sabores</Styled.Text>
+        <Styled.Text>A gelateria</Styled.Text>
       </Styled.ArtisanalIceCream>
 
-      <Styled.SecondSection>
-        <Styled.TitleArea>
-          <Styled.TitleText>Sabores de sorvete</Styled.TitleText>
-        </Styled.TitleArea>
+      <Styled.DescriptionArea>
+        <Styled.TextArea>
+          <Styled.Wrapper>
+            <Styled.Title>Sobre Nós</Styled.Title>
+            <Styled.Span>Nós simplesmente amamos sorvete!</Styled.Span>
+          </Styled.Wrapper>
+          
+          <Styled.ParagraphWrapper>
+            <Styled.Paragraph>
+              Somos uma empresa apaixonada pelo que faz. Colocamos amor em cada
+              sorvete produzido. Fazemos o melhor sorvete para os nossos
+              clientes e gostamos de receber elogios. Estamos operando desde
+              2009 com as melhores matérias-primas para a produção final do
+              sorvete. Vendemos tanto para varejo como para atacado.
+            </Styled.Paragraph>
 
-        <Styled.CardArea>
-          <Card image={Oreo} title="Sorvete de Oreo" paragraph="Delicioso sorvete sabor Oreo. Uma explosão de sabor."/>
+            <Styled.Paragraph>
+              Nossos clientes podem comprar os nossos sorvetes e degustar na
+              nossa loja ou levar para sua residência e aproveitar junto com a
+              família. Também vendemos para estabelecimentos e criamos eventos
+              como festa de aniversário, formaturas e eventos empresariais. Para
+              contratar os nossos serviços, basta entrar em contato conosco.
+              Iremos proporcionar o melhor atendimento e os melhores produtos
+              para você fazer a sua festa mais saborosa, com o melhor sorvete da
+              cidade.
+            </Styled.Paragraph>
+          </Styled.ParagraphWrapper>
+        </Styled.TextArea>
+      </Styled.DescriptionArea>
 
-          <Card image={Pistache} title="Sorvete Pistache" paragraph="Cremoso sorvete sabor pistache com pedacinhos de semente."/>
-
-          <Card image={CookieAndAvela} title="Sorvete Cookies & Avelã" paragraph="O nosso melhor sorvete. Você vai adorar o sabor."/>
-
-          <Card image={Kiwi} title="Sorvete de Kiwi" paragraph="Delicioso e refrescante sorvete sabor kiwi. Rico em vitamina C."/>
-
-          <Card image={Morango} title="Sorvete de Morango" paragraph="Sorvete de morango gourmet. Tradicional e saboroso"/>
-
-          <Card image={Lemon} title="Sorvete de Limão Siciliano" paragraph="O incrível sorvete gourmet de limão siciliano vai te encantar."/>
-        </Styled.CardArea>
-      </Styled.SecondSection>
+      <Styled.ImageSection>
+        <Styled.ImageWrapper>
+          <Styled.Image src={FirstImage}/>
+          <Styled.Image src={SecondImage}/>
+        </Styled.ImageWrapper>
+      </Styled.ImageSection>
 
       <Footer />
     </main>
