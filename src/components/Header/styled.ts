@@ -2,9 +2,13 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 
 export const Container = styled.header`
-  height: 80px;
+  min-height: 80px;
   width: 100%;
   background-color: #f9db79;
+  
+  @media (max-width: 425px){
+    padding-bottom: 20px;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -13,6 +17,10 @@ export const Wrapper = styled.div`
   justify-content: space-around;
   width: 100%;
   height: 100%;
+
+  @media (max-width: 425px){
+    flex-direction: column;
+  }
 `;
 
 export const Logo = styled.img`
